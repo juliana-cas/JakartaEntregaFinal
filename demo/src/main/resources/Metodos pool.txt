@@ -1,0 +1,7 @@
+Metodos pool
+
+pool.setInitialSize(3);: Este método establece el tamaño inicial del pool de conexiones, este método especifica cuántas conexiones se deben crear y estarán disponibles en el pool cuando se inicie. En este caso, se están configurando 3 conexiones iniciales.
+
+pool.setMinIdle(3);: Establece el número mínimo de conexiones que deben mantenerse en el pool en todo momento, incluso si no se están utilizando. El pool puede reducirse por debajo de este número si las consultas de validación fallan y las conexiones se cierran..
+
+pool.setMaxIdle(8);: Este método establece el número máximo de conexiones inactivas que el pool debe mantener. Si el número de conexiones inactivas supera este valor, el pool comenzará a liberar conexiones adicionales hasta que se alcance el límite máximo.
